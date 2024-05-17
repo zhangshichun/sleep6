@@ -1,4 +1,4 @@
-import requests,os
+import requests,os,time
 defaultPic = './default-img/default.png'
 dirName = './.temp'
 picName = 'test.png'
@@ -10,6 +10,7 @@ def realWrite():
     print('{}下载完成！'.format(picName))
 
 def write():
+    time.sleep(6)
     os.makedirs(dirName, exist_ok=True)
     with open(defaultPic, "rb") as source_file:
         with open(os.path.join(dirName, picName), "wb") as target_file:
