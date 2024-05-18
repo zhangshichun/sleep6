@@ -4,7 +4,7 @@ dirName = './.temp'
 picName = str(random.randint(1, 99999)) + '.png'
 
 async def download():
-    req = requests.get('https://pic.zhangshichun.top/pic/20240517-01.png')
+    req = requests.get('http://pic.zhangshichun.top/pic/20240517-01.png')
     os.makedirs(dirName, exist_ok=True)
     with open(os.path.join(dirName, picName),'wb') as f:
         f.write(req.content)

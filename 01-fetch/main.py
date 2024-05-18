@@ -1,7 +1,7 @@
 import requests,os
 
 def write():
-    req = requests.get('https://pic.zhangshichun.top/pic/20240517-01.png')
+    req = requests.get('http://pic.zhangshichun.top/pic/20240517-01.png')
     dirName = './.temp'
     picName = 'test.png'
     os.makedirs(dirName, exist_ok=True)
